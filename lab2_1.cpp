@@ -64,6 +64,8 @@ int main() {
 
     k = 0;
     int center = N / 2;
+    if(center % 2 == 0 && center > 0)
+	center -= 1;
     int t = 0;
     int left = 0, right = 0, bottom = 0, top = 0;
     arr[k++] = matrix[center][center];
