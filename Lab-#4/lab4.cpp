@@ -30,7 +30,7 @@ public:
 	Matrix(int r, int c) : rows(r), cols(c) {
 		initMatrix();
 	}
-
+	//конструктор копирования надо тут
 	T GetM(int i, int j) {
 		if (i < 0 || j < 0 || i >= rows || j >= cols) return 0;
 		return matrix[i][j];
@@ -71,6 +71,7 @@ public:
 
 
 int main() {
+	//тут надо по вариантам, а не как я сделал
 	int i, j;
 	cout << "PART 1" << endl;
 	Matrix<int> M1(3, 4), M2(1, 1);
